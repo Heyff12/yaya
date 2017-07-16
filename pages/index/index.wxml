@@ -1,0 +1,51 @@
+<!--index.wxml-->
+<view class="container">
+    <view class="head" catchtap="onImgHead" data-src="{{userInfo.avatarUrl}}">
+        <image class="head_img" src="{{userInfo.avatarUrl}}" mode="aspectFill"></image>
+        <view class="head_name">
+            <view class="name_dl">姓名：
+                <text class="dt_lable">{{userInfo.nickName}}</text>
+            </view>
+            <view class="name_dl">性别：
+                <text class="dt_lable">{{userInfo.gender?userInfo.gender==1?'男':'女':'未知'}}</text>
+            </view>
+            <view class="name_dl">地址：
+                <text class="dt_lable">{{userInfo.city+'-'+userInfo.province+'-'+userInfo.country}}</text>
+            </view>
+        </view>
+    </view>
+    <view class="hr"></view>
+    <view class="detail_dl" catchtap="onMap">
+        <view class="detail_dl_img">
+            <image class="detail_dl_img1" src="/images/icon/addr.png" mode="aspectFill"></image>
+        </view>
+        <text>{{address}}</text>
+        <image class="detail_dl_img2" src="/images/icon/arrow.png" mode="aspectFill"></image>
+    </view>
+    <view class="detail_dl">
+        <view class="detail_dl_img">
+            <image class="detail_dl_img1" src="/images/icon/time.png" mode="aspectFill"></image>
+        </view>
+        <text>{{time}}</text>
+    </view>
+    <view class="detail_dl" catchtap="onTel">
+        <view class="detail_dl_img">
+            <image class="detail_dl_img" src="/images/icon/tel.png" mode="aspectFill"></image>
+        </view>
+        <text>{{telphone}}</text>
+        <image class="detail_dl_img2" src="/images/icon/arrow.png" mode="aspectFill"></image>
+    </view>
+    <view class="detail_dl">
+        <view class="detail_dl_img">
+            <image class="detail_dl_img" src="/images/icon/pic.png" mode="aspectFill"></image>
+        </view>
+        <text>照片浏览</text>
+    </view>
+    <view class="detail_imgs">
+        <block wx:for="{{img_scan}}" wx:key="">
+            <view class="detail_imgs_img" catchtap="onImgHead" data-src="{{item}}">
+                <image src="{{item}}" mode="aspectFill"></image>
+            </view>
+        </block>
+    </view>
+</view>

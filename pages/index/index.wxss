@@ -1,0 +1,82 @@
+/**index.wxss**/
+.container {
+  padding: 20rpx 30rpx;
+  box-sizing: border-box;
+  font-size:36rpx;
+} 
+.head{
+	display:flex;
+	flex-direction:row;
+}
+.head_img{
+	width:130rpx;
+	height:130rpx;
+	overflow:hidden;
+	border-radius:100%;
+	margin-top:8rpx;
+}
+.head_name{
+	margin:0 0 0 20rpx;
+	font-size:28rpx;
+	width:540rpx;
+}
+.head_name .name_dl{
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+}
+.head_name .name_dl .dt_lable{
+	font-size:36rpx;
+}
+
+.hr{
+	width:100%;
+	height:2rpx;
+	border-bottom:2rpx dashed #e5e5e5;
+	margin:20rpx auto;
+}
+
+.detail_dl{
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+	height:100rpx;
+	position:relative;
+}
+.detail_dl_img{
+	width:80rpx;
+	display:inline-flex;
+	align-items:center;
+	height:100rpx;
+}
+.detail_dl_img .detail_dl_img1{
+	width:40rpx;
+	height:46rpx;
+}
+.detail_dl_img .detail_dl_img{
+	width:42rpx;
+	height:34rpx;
+	vertical-align:middle;
+}
+.detail_dl .detail_dl_img2{
+	width:46rpx;
+	height:46rpx;
+	position:absolute;
+	right:0;
+}
+
+.detail_imgs{
+	width:100%;
+}
+.detail_imgs .detail_imgs_img{
+	width:200rpx;
+	height:160rpx;
+	overflow:hidden;
+	margin:20rpx 15rpx;
+	float:left;
+}
+.detail_imgs .detail_imgs_img image{
+	width:200rpx;
+	height:160rpx;
+}
+
