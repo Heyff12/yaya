@@ -13,7 +13,7 @@
 	height:130rpx;
 	overflow:hidden;
 	border-radius:100%;
-	margin-top:8rpx;
+	margin-top:12rpx;
 }
 .head_name{
 	margin:0 0 0 20rpx;
@@ -42,12 +42,16 @@
 	align-items:center;
 	height:100rpx;
 	position:relative;
+	padding:16rpx 0;
 }
 .detail_dl_img{
 	width:80rpx;
 	display:inline-flex;
 	align-items:center;
 	height:100rpx;
+}
+.detail_dl text{
+	width:560rpx;
 }
 .detail_dl_img .detail_dl_img1{
 	width:40rpx;
@@ -79,4 +83,17 @@
 	width:200rpx;
 	height:160rpx;
 }
+
+.card{
+	width:100%;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	align-items:center;
+}
+
+
+
+
+
 

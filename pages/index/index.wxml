@@ -14,6 +14,10 @@
             </view>
         </view>
     </view>
+    <view class="hr"></view>    
+    <!-- <view class="card">
+        <text>优惠券</text><button type="primary" plain="true" size="mini">查看</button>
+    </view> -->
     <view class="hr"></view>
     <view class="detail_dl" catchtap="onMap">
         <view class="detail_dl_img">
@@ -43,7 +47,7 @@
     </view>
     <view class="detail_imgs">
         <block wx:for="{{img_scan}}" wx:key="">
-            <view class="detail_imgs_img" catchtap="onImgHead" data-src="{{item}}">
+            <view class="detail_imgs_img" catchtap="onImgList" data-src="{{item}}">
                 <image src="{{item}}" mode="aspectFill"></image>
             </view>
         </block>
